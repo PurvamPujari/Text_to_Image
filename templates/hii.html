@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BE Project</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static', filename='hii.css') }}" rel="stylesheet">      
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">BE Project</a>
+        </div>
+    </nav>
+
+    <div class="container">
+    <br>
+    <div style="text-align: center;" class="row">
+        <div class="col-md-12">
+                    <h2>Generated Images</h2>
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+    {% for result in results %}
+        <div class="col-md-4" style="margin-top: 10px;"><img src={{result}}></div>
+    {% endfor%}
+    </div>
+    <br>
+
+    </div>
+        </div>
+    </div>
+</body>

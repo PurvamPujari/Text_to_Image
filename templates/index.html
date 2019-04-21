@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BE Project</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static', filename='index.css') }}" rel="stylesheet">      
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">BE Project</a>
+        </div>
+    </nav>
+    <div class="container">
+         <div id="content" style="margin-top:2em;text-align: center;">
+            
+
+            <h1><u>Image Generation using AttnGAN</u></h1>
+<br><br>
+            <div>
+                <form id="text-section" action="http://localhost:5000/text" method="post">
+                    <input  style="width:500px;height: 45px;" type="text" id="text_desc" name="text">
+                    <button type="submit" type="button" class="btn btn-primary btn-lg " id="btn-predict" style="text-align: center;vertical-align: middle;margin-left: 30px;height: 46px;width: 200px;">Generate Image</button>
+                </form>
+                <br>
+                <br>
+                <img src="static/framework.png" style="width: 700px;height:332px;">
+            </div>
+
+        </div>
+    </div>
+</body>
